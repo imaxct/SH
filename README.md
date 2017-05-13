@@ -1,2 +1,2 @@
 # SH
-for shell learning
+shell learning, not Sherlock Holmes.

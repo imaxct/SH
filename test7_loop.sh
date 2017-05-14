@@ -11,3 +11,17 @@ for ((;;)); do
         ;;
     esac
 done
+
+[[ -f $0 && -x $0 ]] && echo "file executable"
+
+[[ -d $0 && -x $0 ]] && echo "d and x"
+
+for x in "$@"; do
+    echo $x
+done
+
+cnt=1
+while (( $cnt <= 5 )); do
+    echo $cnt
+    let cnt++
+done
